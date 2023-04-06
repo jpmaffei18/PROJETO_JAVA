@@ -1,6 +1,0 @@
-package servico;
-
-public class LoginServico {
-	public boolean verificarUsuario(String usuario, String senha);
-	}
-}

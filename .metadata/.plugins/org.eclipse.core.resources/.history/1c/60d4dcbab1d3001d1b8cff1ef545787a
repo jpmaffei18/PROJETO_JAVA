@@ -1,0 +1,25 @@
+package dao;
+
+import java.sql.Connection;
+
+public class Dao {
+	public static Connection getConexao() {
+		Connection cnx = null;
+		String driverName = "com.mysql.cj.jdbc.Driver";
+		
+		try {
+			Class.forName(driverName);
+			
+			String severname = "localhost:3306";
+			String database = "JPMAFFEI";
+			String url = "jdbc:mysql://" + serverName + "/" + dataBase;
+			String user ="root";
+			String password = "";
+			
+			cnx = DriverManager
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		return cnx;
+	}
+}

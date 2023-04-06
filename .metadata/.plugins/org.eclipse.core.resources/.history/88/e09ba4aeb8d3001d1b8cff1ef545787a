@@ -1,0 +1,17 @@
+package dao;
+
+import java.sql.Connection;
+
+import modelo.Usuario;
+
+public class UsuarioDAO {
+	public Usuario validarLogin(Usuario usuario) {
+		Connection cnx = Dao.getConexao();
+		Usuario u = null;
+		
+		String sql = "SELECT * FROM cadastro2 WHERE usuario = ? AND senha = ?";
+		
+		PreparedStatement ps
+		return u;
+	}
+}

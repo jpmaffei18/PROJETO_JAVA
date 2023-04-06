@@ -1,7 +1,9 @@
 package controle;
 
-import java.io.IOException;
 
+import modelo.Usuario;
+
+import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,13 +28,15 @@ public class LoginServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-		String usuario = request.getParameter ("usuario");
-		String senha = request.getParameter ("senha");
+		Usuario usuario = new Usuario();
+		
+		usuario.setUsuario(request.getParameter ("usuario"));
+		usuario.setSenha(request.getParameter ("senha"));
 		
 		LoginServico servico = new LoginServico();
 		
-		if(servico.verificarUsuario(usuario,senha)) {
-			response.sendRedirect("home.jsp");
+		if(servico.verificarUsuario(usuario)) {
+			response.sendRedirect("index.jsp");
 		} else {
 			response.sendRedirect("logincadastro.jsp");
 		}

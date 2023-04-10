@@ -1,16 +1,18 @@
 package controle;
 
 
-import modelo.Usuario;
-
 import java.io.IOException;
+import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-import servico.LoginServico;
+import modelo.Usuario;
+import servico.UsuariosServico;
 
 
 @WebServlet("/LoginServlet")
@@ -29,13 +31,19 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		Usuario usuario = new Usuario();
+		HttpSession session = request.getSession();
 		
 		usuario.setUsuario(request.getParameter ("usuario"));
 		usuario.setSenha(request.getParameter ("senha"));
 		
-		LoginServico servico = new LoginServico();
+		UsuariosServico servico = new UsuariosServico();
+		
 		
 		if(servico.verificarUsuario(usuario)) {
+			List<Usuario> lista = servico.listarUsuario();
+			session.setAttribute("lista", lista);
+			System.out.println("lista lida --> " + lista.get(0).getNome());
+			
 			response.sendRedirect("index.jsp");
 		} else {
 			response.sendRedirect("logincadastro.jsp");

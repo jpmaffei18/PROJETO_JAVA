@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import modelo.Usuario;
 
@@ -36,5 +38,37 @@ public class UsuarioDAO {
 		}
 		
 		return u;
+	}
+	
+	public List<Usuario> listar() {
+		List<Usuario> listaDeUsuarios = new ArrayList<Usuario>();
+		Usuario u = null;
+		
+		Connection cnx = Dao.getConexao();
+	
+		
+		String sql = "SELECT * FROM cadastro2";
+		
+		try {
+			PreparedStatement ps = cnx.prepareStatement(sql);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				u = new Usuario();
+				
+				u.setId(rs.getInt("id"));
+				u.setUsuario(rs.getString("usuario"));
+				u.setSenha(rs.getString("senha"));
+				u.setNome(rs.getString("nome"));
+				u.setEmail(rs.getString("email"));
+				
+				listaDeUsuarios.add(u);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+			
+		return listaDeUsuarios;
 	}
 }

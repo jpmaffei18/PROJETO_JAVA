@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;servico.LoginServico&apos; to &apos;UsuariosServico&apos;&#x0D;&#x0A;- Original project: &apos;FinalWeb&apos;&#x0D;&#x0A;- Original element: &apos;servico.LoginServico&apos;&#x0D;&#x0A;- Renamed element: &apos;servico.UsuariosServico&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;LoginServico&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;servico{LoginServico.java[LoginServico" matchStrategy="1" name="UsuariosServico" qualified="false" references="true" similarDeclarations="false" stamp="1681127015934" textual="false" version="1.0"/>
+</session>

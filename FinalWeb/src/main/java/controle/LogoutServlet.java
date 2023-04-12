@@ -24,7 +24,7 @@ public class LogoutServlet extends HttpServlet {
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.sendRedirect("logincadastro.jsp");
+		response.sendRedirect("index.jsp");
 	}
 
 }

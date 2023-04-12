@@ -1,0 +1,40 @@
+package controle;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import modelo.Usuario;
+import servico.UsuariosServico;
+
+@WebServlet("/CadastroUsuarioServlet")
+public class CadastroUsuarioServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+   
+    public CadastroUsuarioServlet() {
+        super();   
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Usuario usuario = new Usuario();
+		UsuariosServico servico = new UsuariosServico();
+		
+		usuario.setUsuario(request.getParameter("usuario"));
+		usuario.setSenha(request.getParameter("senha"));
+		usuario.setNome(request.getParameter("nome"));
+		usuario.setEmail(request.getParameter("email"));
+		
+		
+		servico.incluirUsuario(usuario);
+	
+		response.sendRedirect("home.jsp");
+	}
+}

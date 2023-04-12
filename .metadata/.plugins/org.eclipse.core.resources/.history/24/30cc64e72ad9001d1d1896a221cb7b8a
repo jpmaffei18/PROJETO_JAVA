@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/home.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gobold" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+                
+    <title> RPG </title>
+</head>
+<body>
+    <header class="cabecalho">
+       <img src="../imagens/JRPG LOGO.png">
+       <h3><a href="login.html"> LOGOUT </a></h3>
+    </header>
+    
+    <div class="conteudo">
+        <div class="menulateral">
+
+            <h1>MENU</h1>
+            
+            <ul>
+
+                <a href="index.html">
+                <li> ÍNICIO </li>
+                </a>
+                
+                <a href="#">
+                    <li> SOBRE O JRPG </li>
+                </a>
+
+                <a href="#">
+                    <li> SOBRE RPG </li>
+                </a>
+
+                <a href="fichas.html">
+                    <li> CRIE SUA FICHA </li>
+                </a>
+
+                <a href="#">
+                    <li> REFERÊNCIAS </li>
+                </a>
+            </ul>
+
+            <img src="../imagens/foto_menu_lateral.jpg">
+        </div>
+
+        
+        <div class="bemvindo">
+        
+            <h1> RPG (ROLE PLAYING GAME) </h1>
+            <h3> RPG é um gênero de jogo no qual os jogadores assumem o papel de personagens imaginários, em um mundo fictício. As principais características do RPG são a interatividade e o trabalho em grupo.
+            Os jogos de RPG podem ser jogados de diversas formas. As mais comuns são através de atuação literal, na qual os jogadores agem, 
+            falam e se vestem como seus personagens, e o RPG de mesa, a forma mais famosa (e a primeira inventada) de RPG. Em qualquer modalidade de RPG, as histórias são guiadas por um jogador denominado “mestre”, que dita a trama, descreve os cenários, controla os inimigos que outros jogadores enfrentam, etc. Enquanto isso, os outros jogadores tomam suas decisões de forma livre conforme as situações narradas pelo mestre.
+            
+            <br/><br/> Para se jogar RPG é necessário três elementos: sistema de regras, narrativa e jogadores.
+            </h3>
+            <h2> SISTEMA DE REGRAS </h2>
+            <h3> Os jogos de RPG são conduzidos através de sistemas de regras predeterminados. Geralmente esses sistemas são produzidos por empresas especializadas no assunto e disponibilizados no mercado através de livros, revistas ou pela internet. No entanto, nada impede que os jogadores criem suas próprias regras ou adaptem as já existentes.
+
+                <br/><br/>Alguns exemplos de sistemas de RPG são: </h3>
+                 <pre><h3> 3D&T      D&D      Storyteller      Ordem Paranormal </h3> </pre>
+                
+        
+        </div>
+
+</body>
+</html>

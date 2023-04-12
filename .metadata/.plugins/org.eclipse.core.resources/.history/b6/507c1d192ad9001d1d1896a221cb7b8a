@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="home.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gobold" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
+                
+    <title> HOME </title>
+</head>
+<body>
+    <header class="cabecalho">
+       <img src="imagens/JRPG LOGO.png">
+        <h3><a href="login.html"> LOGOUT </a></h3>
+    </header>
+    
+    <div class="conteudo">
+        <div class="menulateral">
+
+            <h1>MENU</h1>
+            
+            <ul>
+
+                <a href="index.jsp">
+                <li> ÍNICIO </li>
+                </a>
+                
+                <a href="#">
+                    <li> SOBRE O JRPG </li>
+                </a>
+
+                <a href="rpg.jsp">
+                    <li> SOBRE RPG </li>
+                </a>
+
+                <a href="fichas.jsp">
+                    <li> CRIE SUA FICHA </li>
+                </a>
+
+                <a href="#">
+                    <li> REFERÊNCIAS </li>
+                </a>
+                
+                <a href="cadastrados.jsp">
+                    <li> USUARIOS </li>
+                </a>
+            </ul>
+
+            <img src="imagens/foto_menu_lateral.jpg">
+        </div>
+
+        
+        <div class="bemvindo">
+        
+            <h1> BEM-VINDO AO JRPG ( João Role Playing Game) </h1>
+            <h3> Aqui é um local onde você vai, encontrar informações sobre rpg, pegar referências para fichas, e também criar suas próprias fichas.</h3>
+            <h2> REFERÊNCIAS </h2>
+            <h3> Acessando a página de referências você vai encontrar alguns personagens, e suas fichas, de rpg famosos como Dungeons & Dragons, Ordem Paranormal, The One Ring RPG, e Tormenta  20 RPG.</h3>
+            <h2> CRIE SUA FICHA</h2>
+            <h3> Você poderá criar sua prórpria ficha, acessando a página <a href="fichas.html" class="criarficha">criar ficha</a>. Lá você vai encontrar várias personalizações para sua ficha.
+            Pode escolher sua foto, mudar a cor ou escolher uma foto de fundo, escolher sua própria fonte desejada, e muito mais. Ao final de tudo poderá importa-la nos formatos de png, jpeg, webp ou tiff. 
+            </h3>
+        
+        </div>
+</div>
+
+</body>
+</html>

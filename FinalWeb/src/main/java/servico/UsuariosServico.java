@@ -26,4 +26,9 @@ public class UsuariosServico {
 	
 	}
 	
+		public boolean incluirUsuario(Usuario usuario) {
+			boolean retorno = dao.incluir(usuario);
+			
+			return retorno;
+		}
 }

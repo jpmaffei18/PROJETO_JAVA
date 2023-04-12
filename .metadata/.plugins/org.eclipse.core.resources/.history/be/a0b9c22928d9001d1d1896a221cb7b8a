@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<table>
+	<%
+		List<Usuario> lista = (List<Usuario>)session.getAttribute("lista");
+	%>
+	
+	<table border = 1>
+		<tr>
+			<td>USUÁRIO</td>
+			<td>NOME</td>
+			<td>SENHA</td>
+		</tr>
+		
+		<%	
+			for(Usuario usuario: lista){
+				out.write("<tr>");
+					out.write("<td>" + usuario.getUsuario() + "</td>");
+					out.write("<td>" + usuario.getNome() + "</td>");
+					out.write("<td>" + usuario.getEmail() + "</td>");
+				out.write("</tr>");
+			}
+		%>
+			
+	</table>
+
+
+</body>
+</html>

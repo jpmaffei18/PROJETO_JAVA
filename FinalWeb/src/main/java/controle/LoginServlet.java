@@ -44,9 +44,9 @@ public class LoginServlet extends HttpServlet {
 			session.setAttribute("lista", lista);
 			System.out.println("lista lida --> " + lista.get(0).getNome());
 			
-			response.sendRedirect("index.jsp");
+			response.sendRedirect("home.jsp");
 		} else {
-			response.sendRedirect("logincadastro.jsp");
+			response.sendRedirect("index.jsp");
 		}
 	}
 

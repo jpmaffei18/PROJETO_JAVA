@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    margin-top: 0;
+    background-color: black ;
+    overflow-x: hidden;
+    border: solid 2px red;
+}
+
+.conteudo{
+    width: 100%;
+    height: 848px;
+    border: solid 2px red; 
+}
+
+.cabecalho{
+    background-color: black ;
+    width: 99,7%;
+    height: 80px;
+    border-radius: 15px; 
+    border: solid 3px red;
+    color: red;
+    padding-top: 20px;
+    padding-left: 80px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header img{
+    margin-top: -20px;
+    width: 200px;
+    margin-right: 60px;
+}
+
+
+header h3{
+    float: right;
+    margin-right: 20px;
+    margin-left:-40px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+#ficha{
+    background-color: black;
+    width: 850px;
+    height: 800px;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-right: 40px;
+    border: solid 2px red; 
+    border-radius: 15px;
+    float: left;
+    color: white;
+   
+
+}
+
+#ficha h2{
+    color: white;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.mudarcor{
+    float: right;
+    margin-right: 300px;
+    margin-top: 0;
+}
+
+
+
+#ficha table{
+    margin-top: 40px;
+    float: left;
+}
+
+#ficha td{
+    margin-left: 110px;
+    float: left;
+    font-size: 20px;
+}
+
+.imagem{
+   width: 200px;
+   height: 200px;
+   border: solid 2px red;
+   float: right;
+   margin-right: 30px; 
+}
+
+#name{
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+
+#raca {
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
+
+#classe{
+    margin-left: 2px;
+    margin-bottom: 30px;
+}
+
+
+.fichaform{
+    margin-top: 50px;
+    color:white;
+}
+
+.fichaform textarea{
+    margin-left: 60px;
+    width: 800px;
+    height:200px;
+  
+}
+
+
+label{
+    color: white;
+    margin-left: 60px;
+}
+
+#colorPickerborder{
+    margin-left: 2px;
+}
+
+#colorPickerfont{
+    margin-left: 5.5px;
+}
